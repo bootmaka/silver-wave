@@ -23,3 +23,4 @@
         int r = distribution.Random(random.NextDouble());
         for (int t = 0; t < T; t++) if (w[t] != (t == r)) Ban(node, t);
     }
+//good
