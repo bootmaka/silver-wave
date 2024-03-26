@@ -2,7 +2,7 @@
         {
             if (!periodic && (i % MX + N > MX || i / MX + N > MY)) continue;
             int remainingValues = sumsOfOnes[i];
-            double entropy = heuristic == Heuristic.Entropy ? entropies[i] : remainingValues;
+            double entropy = heuristic == Heuristic.Entropy ? entropies[i] : remainingValues;//yes
             if (remainingValues > 1 && entropy <= min)
             {
                 double noise = 1E-6 * random.NextDouble();
